@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3346915890992124367
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2246464185688931744, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_Color.b
+      value: 0.29874206
+      objectReference: {fileID: 0}
+    - target: {fileID: 2246464185688931744, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_Color.g
+      value: 0.32906827
+      objectReference: {fileID: 0}
+    - target: {fileID: 2246464185688931744, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2246464185688931744, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_Intensity
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2751576626740769956, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5368602014975876156, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_Name
+      value: EndNeuron
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969344000097703039, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969344000097703039, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_Color.g
+      value: 0.04364116
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969344000097703039, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708752007471933403, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708752007471933403, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708752007471933403, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708752007471933403, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708752007471933403, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708752007471933403, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708752007471933403, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708752007471933403, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708752007471933403, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708752007471933403, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7708752007471933403, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7fd575f561a0ef04c939e20126966270, type: 3}
