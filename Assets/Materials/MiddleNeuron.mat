@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Emission:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 10c8906f7eea7ac458c958bca32cdbb7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -54,7 +54,7 @@ Material:
     m_Floats:
     - _EnableExternalAlpha: 0
     m_Colors:
-    - Color_a213ba40cb1f4b4f9d710fa19e0f8e15: {r: 0.13308653, g: 0, b: 2.9960785, a: 1}
+    - Color_a213ba40cb1f4b4f9d710fa19e0f8e15: {r: 1.2830188, g: 1.2830188, b: 1.2830188, a: 1}
     - Vector2_93efaf148b504681864685a62285f42b: {r: 1, g: 1, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}

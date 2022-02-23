@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1689302977845794683, guid: d3b9761be8b9e13479489a5be3626d1b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b7309f3d0135aff4f95b91e4b41b6e53, type: 2}
     - target: {fileID: 3264611577819236659, guid: d3b9761be8b9e13479489a5be3626d1b, type: 3}
       propertyPath: m_Name
       value: StartNeuron
@@ -85,7 +89,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8710571625193302191, guid: d3b9761be8b9e13479489a5be3626d1b, type: 3}
       propertyPath: m_Intensity
-      value: 2.5
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8710571625193302191, guid: d3b9761be8b9e13479489a5be3626d1b, type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.397
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3b9761be8b9e13479489a5be3626d1b, type: 3}
