@@ -1,20 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
 using QuikGraph;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
-[ExecuteAlways]
+// [ExecuteAlways]
 public class MapManager : MonoBehaviour
 {
-    public Node startNode;
-    public Node endNode;
+    public static MapManager Singleton;
+
+    [Required] [SerializeField] public Node startNode;
+    [Required] [SerializeField] public Node endNode;
 
     [SerializeField] private List<Node> nodes;
 
-    public AdjacencyGraph<Node, Edge<Node>> DirectedMap { get; private set; }
+    public NodeMap Map { get; private set; }
 
     private void Awake()
     {
+        if (Singleton == null)
+        {
+            Singleton = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
         AddNodesToGraph();
     }
 
@@ -30,30 +42,17 @@ public class MapManager : MonoBehaviour
 
     private void AddNodesToGraph()
     {
-        DirectedMap = new AdjacencyGraph<Node, Edge<Node>>();
-        foreach (var n in nodes)
-        {
-            DirectedMap.AddVertex(n);
-        }
-        
-        foreach (var n in nodes)
-        {
-            foreach (var neighbour in n.neighbours)
-            {
-                DirectedMap.AddEdge(new Edge<Node>(n, neighbour));
-            }
-        }
-        
-        
+        Map = new NodeMap();
+        Map.AddNodes(nodes);
     }
 
     private void OnDrawGizmos()
     {
         AddNodesToGraph();
         Gizmos.color = Color.red;
-        foreach (var vertex in DirectedMap.Vertices)
+        foreach (var vertex in Map.Graph.Vertices)
         {
-            foreach (var edge in DirectedMap.OutEdges(vertex))
+            foreach (var edge in Map.Graph.OutEdges(vertex))
             {
                 var sourcePos = edge.Source.transform.position;
                 var targetPos = edge.Target.transform.position;

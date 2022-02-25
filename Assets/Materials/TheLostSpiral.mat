@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NeuronConnection
+  m_Name: TheLostSpiral
   m_Shader: {fileID: -6465566751694194690, guid: 4ef386912747ffa4a81bd631ab3bf55f, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -19,12 +19,24 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Emission:
-        m_Texture: {fileID: 2800000, guid: e9d7c5440e05da94a9b4417d9341127b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 082271a68303b8542816ed0152d5602a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4a198ade01d375b41b44b5049c3457c9, type: 3}
+        m_Texture: {fileID: 2800000, guid: e04c3e383644fd94aa18ae76b7002ac5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -39,8 +51,12 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
+    m_Floats:
+    - _EnableExternalAlpha: 0
     m_Colors:
-    - Color_a213ba40cb1f4b4f9d710fa19e0f8e15: {r: 0, g: 128.67023, b: 8192.005, a: 1}
+    - Color_a213ba40cb1f4b4f9d710fa19e0f8e15: {r: 2.1803923, g: 0, b: 0, a: 0}
     - Vector2_93efaf148b504681864685a62285f42b: {r: 1, g: 1, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
