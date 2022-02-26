@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7b414ab29ca7c488079d3d83add50d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationRange: {x: -60, y: 60}
+  rotationRange: {x: -100, y: 100}
   cycleTimeSeconds: 1
 --- !u!1 &6722883298739056090
 GameObject:
@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 5812085029128635721}
   - component: {fileID: 8645268671466035202}
   - component: {fileID: 7596346981072656329}
+  - component: {fileID: 4858959838133963416}
   m_Layer: 0
   m_Name: TheLost
   m_TagString: Untagged
@@ -209,6 +210,18 @@ MonoBehaviour:
   onDeathEffect: {fileID: 6687605225206429533, guid: e0ddbc658c2c2ed498dcb17794d2cff7, type: 3}
   onDeathSound: {fileID: 8300000, guid: 511d4aeb58a583f4fb2d4dd307bc4ca4, type: 3}
   playSoundLocation: {fileID: 0}
+--- !u!114 &4858959838133963416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6722883298739056090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25aae4c24c85f554087e21b131cfff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7163881193448193026
 GameObject:
   m_ObjectHideFlags: 0
