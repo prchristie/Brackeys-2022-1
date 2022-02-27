@@ -1,21 +1,24 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MonsterMovementHandler : MonoBehaviour
 {
     [SerializeField] private float nodeProximitySensor;
-    [SerializeField] private float speed;
+    [SerializeField] public float speed;
     
     private MapManager _mapMan;
 
     private Node _nextNode;
+    private Node _endNode;
 
     // Start is called before the first frame update
     void Start()
     {
         _mapMan = MapManager.Singleton;
         _nextNode = _mapMan.startNode;
+        _endNode = _mapMan.endNode;
     }
 
     // Update is called once per frame
@@ -24,6 +27,22 @@ public class MonsterMovementHandler : MonoBehaviour
         CheckNextNodeProximity();
 
         MoveTowardsNextNode();
+
+        CheckIfAtEndNode();
+    }
+
+    private void CheckIfAtEndNode()
+    {
+        if (Vector3.Distance(transform.position, 
+                _endNode.transform.position) < nodeProximitySensor)
+        {
+            RestartGame();
+        }
+    }
+
+    private void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void MoveTowardsNextNode()
